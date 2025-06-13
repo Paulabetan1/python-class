@@ -22,8 +22,8 @@ fruits[0] = 'Avacado'
 print(fruits)
 
 # Adding elements
-
-fruits.append('Cherry')
+item = 'Cherry'
+fruits.append(item)
 print(fruits)
 
 # Iterating over a list
