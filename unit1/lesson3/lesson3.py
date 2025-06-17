@@ -21,7 +21,7 @@ def function_name(parameters):
 def greet():
     print('Hello class!! 😁')
 
-greet() #Calling function
+greet() #Calling function 
 
 # Function with Parameters
 def greet_user(name): # 'name' is a parameter(variable)
