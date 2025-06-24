@@ -30,6 +30,7 @@ class Dog(ABC): # Base class, parent class
     def __init__(self, name, age):
         self.__name = name # Private attribute
         self.__age = age # Private attribute
+        self.test = 0
     
     @property
     def name(self): # Getter
@@ -63,15 +64,18 @@ class Dog(ABC): # Base class, parent class
     def print_details(self):
         print(f"🐶 {self.__name}, {self.__age}")
     
-    @abstractmethod
-    def makes_sound(self): # In the base class just is construct the structure
-        pass
+    # @abstractmethod
+    # def makes_sound(self): # In the base class just is construct the structure
+    #     pass
     
-    @abstractmethod
-    def perform_trick(self):
-        pass
+    # @abstractmethod
+    # def perform_trick(self):
+    #     pass
 
-
+example = Dog('Bruno', 1)
+example.name #Getter
+example.name #Getter
+example.name = 1 # Setter
 # Sub classes, child classes
 
 class Aussie(Dog):
